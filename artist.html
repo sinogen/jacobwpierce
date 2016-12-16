@@ -2,14 +2,23 @@
 <html>
 	<head>
 		<title> Art Projects </title>
-	<style>
-	body{
-		background-color: #F2992E;
-	}
-	</style>
+		<link rel="stylesheet" type="text/css" href="artist.css">
 	</head>
-	
+		
 	<body>
+		<h1 id="header" align="middle"> Fuck you </h1>
+		<center>
+			<img src="assets/icon.png" alt="test image" height=20% width=20%>
+		</center>
+		<script>
+			var idkTimer = setInterval(changeHeader, 2000);
+			var msgs = ["Fuck you", "Eat shit", "Go away"];
+			function changeHeader() {
+				var ranNum = Math.floor(Math.random() * (2 - 0 + 1)) + 0;
+				document.getElementById("header").innerHTML = msgs[ranNum];
+				//alert(msgs[ranNum]);
+			}
+		</script>
 	</body>
 
 	<footer>
